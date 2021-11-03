@@ -24,8 +24,13 @@ score_writer.penup()
 score_writer.goto(-250,250)
 
 def spot_clicked(x,y):
-  update_score()
-  change_position()
+  counter.getscreen()
+  if(timer!=0):
+    update_score()
+    change_position()
+
+  else:
+    spot.hideturtle()
   
 
 def change_position():
